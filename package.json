@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.3.8"
+  "name": "onyx-strategic-solutions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Onyx Strategic Solutions website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
