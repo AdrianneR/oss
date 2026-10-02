@@ -14,44 +14,33 @@ inquiry form.
 - `team.html` - About Us page with the company mission and team profiles.
 - `contact.html` - Request a Quote form with service, timeline, and project
   details fields.
+- `thank-you.html` - Contact form confirmation page.
 
 ## Technology
 
-- HTML5 and inline CSS
-- Bootstrap 5.3.8
-- Inter web font
-- Vanilla JavaScript/Node.js static server
+- HTML5, inline CSS, and vanilla JavaScript
+- Bootstrap 5.3.8 and Inter web font, loaded from CDNs
+- Node.js built-in HTTP server (no runtime dependencies)
 - Background video and brand imagery in `images/`
 
 Bootstrap and Google Fonts are loaded from CDNs, so an internet connection is
 needed for the complete styling and typography when viewing the site.
 
-## Local preview
+## Run locally
 
-The included `app.js` serves files relative to its working directory. Because
-the pages currently use `/oss/...` asset paths, start the server from the
-directory containing this repository:
+Requires Node.js 18 or newer. Start the server with:
 
 ```bash
-cd ..
-node oss/app.js
+npm start
 ```
 
-Then open:
+Open <http://localhost:8080>. The server uses the deployment platform's `PORT`
+environment variable when available. Existing `/oss/...` page and asset URLs
+are supported as well.
 
-<http://localhost:8080/oss/index.html>
+## Deploy
 
-Alternatively, open `index.html` directly in a browser for a quick static
-preview. Some absolute asset paths may not resolve correctly when the file is
-opened directly or served from a different base path.
-
-## Dependencies
-
-Install the project dependency with:
-
-```bash
-npm install
-```
-
-Bootstrap is listed in `package.json`; the current pages primarily reference
-the Bootstrap CDN version declared in each HTML file.
+Deploy this repository to a Node.js hosting platform, select Node.js 18 or
+newer, and use `npm start` as the start command. No build command or dependency
+installation is required. The server binds to `0.0.0.0` and listens on `PORT`
+when provided by the host.

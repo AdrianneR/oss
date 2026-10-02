@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thank you for contacting Onyx Strategic Solutions Group." />
+    <title>Thank You | Onyx Strategic Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-light text-dark d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/oss/index.html" aria-label="Onyx Strategic Solutions home">
+          <img
+            src="/oss/images/oss-logo.png"
+            alt="Onyx Strategic Solutions logo"
+            width="300"
+            height="70"
+          />
+        </a>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="nav navbar-nav ms-auto navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link" href="/oss/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/oss/team.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/oss/contact.html" aria-current="page">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="confirmation-page container flex-grow-1">
+      <section class="confirmation-panel text-center" aria-labelledby="confirmation-title">
+        <div class="confirmation-mark" aria-hidden="true">✓</div>
+        <span class="eyebrow">Message received</span>
+        <h1 id="confirmation-title">Thank You</h1>
+        <p class="confirmation-copy">
+          Your inquiry has been submitted to Onyx Strategic Solutions.<br />
+          We appreciate you sharing your needs and will be in touch.
+        </p>
+        <a class="btn confirmation-action" href="/oss/index.html">Return to Home</a>
+      </section>
+    </main>
+
+    <footer class="footer footer-custom bg-dark mt-auto">
+      <div class="container py-3">
+        <div class="row align-items-center g-2">
+          <div class="col-md-4 text-center">
+            <a href="/oss/index.html" class="d-inline-flex align-items-center text-decoration-none footer-brand">
+              <img src="/oss/images/oss-logo.png" alt="Onyx Strategic Solutions logo" width="150" height="38" />
+            </a>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="d-flex justify-content-center gap-3 flex-wrap footer-nav">
+              <a href="/oss/index.html" class="footer-link">Home</a>
+              <a href="/oss/services.html" class="footer-link">Services</a>
+              <a href="/oss/team.html" class="footer-link">About Us</a>
+              <a href="/oss/contact.html" class="footer-link">Contact</a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <span class="text-light small">© 2026 Onyx Strategic Solutions Group</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        background-color: #EFF2F3 !important;
+        color: #606E7B;
+        font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      .navbar,
+      .footer-custom {
+        background-color: #3D4C5A !important;
+      }
+
+      .navbar-custom {
+        --bs-navbar-color: #FFFFFF;
+        --bs-navbar-hover-color: #B48C8C;
+        --bs-navbar-active-color: #FFFFFF;
+      }
+
+      .navbar .container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .navbar-brand {
+        flex: 0 0 auto;
+      }
+
+      .navbar-brand img {
+        height: auto;
+        max-width: 300px;
+        width: min(300px, 45vw);
+      }
+
+      .navbar-collapse {
+        display: flex !important;
+        flex: 1 1 auto;
+        justify-content: flex-end;
+      }
+
+      .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      @media (max-width: 576px) {
+        .navbar-collapse {
+          flex-basis: 100%;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .confirmation-page {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+      }
+
+      .confirmation-panel {
+        background: rgba(255, 255, 255, 0.96);
+        border: 2px solid #9B6A6C;
+        box-shadow: 0 1rem 2.5rem rgba(61, 76, 90, 0.1);
+        max-width: 760px;
+        padding: clamp(2rem, 6vw, 4rem);
+        width: 100%;
+      }
+
+      .confirmation-mark {
+        align-items: center;
+        background: #3D4C5A;
+        border: 3px solid #9B6A6C;
+        border-radius: 50%;
+        color: #FFFFFF;
+        display: flex;
+        font-size: 2rem;
+        font-weight: 700;
+        height: 76px;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        width: 76px;
+      }
+
+      .eyebrow {
+        color: #9B6A6C;
+        display: inline-block;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        margin-bottom: 0.75rem;
+        text-transform: uppercase;
+      }
+
+      .confirmation-panel h1 {
+        color: #3D4C5A;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .confirmation-copy {
+        color: #606E7B;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin: 0 auto 2rem;
+        max-width: 560px;
+      }
+
+      .confirmation-action {
+        background: #3D4C5A;
+        border: 2px solid #9B6A6C;
+        color: #FFFFFF;
+        font-weight: 600;
+        padding: 0.8rem 1.5rem;
+      }
+
+      .confirmation-action:hover,
+      .confirmation-action:focus {
+        background: #9B6A6C;
+        border-color: #9B6A6C;
+        color: #FFFFFF;
+      }
+
+      .footer-custom {
+        color: #FFFFFF;
+        padding: 0.5rem 0;
+        text-align: center;
+      }
+
+      .footer-brand img {
+        filter: brightness(0) invert(1);
+        height: auto;
+        width: 150px !important;
+      }
+
+      .footer-nav {
+        font-size: 0.9rem;
+      }
+
+      .footer-link {
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .footer-link:hover {
+        color: #B48C8C;
+      }
+    </style>
+  </body>
+</html>

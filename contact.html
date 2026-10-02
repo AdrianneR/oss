@@ -59,19 +59,27 @@
       </section>
 
       <section class="quote-form-panel mx-auto my-5">
-        <form action="#" method="post">
+        <form action="https://script.google.com/macros/s/AKfycbzg2rfUzNzW9X22hqnpE3aTVAaI_HE9cd1t0i9dk4QOC_DZcVCA5oLyT9IBfimi9oLyIA/exec" method="post">
           <div class="row g-4">
             <div class="col-md-6">
-              <label class="form-label" for="name">Name</label>
-              <input class="form-control" id="name" name="name" type="text" required />
+              <label class="form-label" for="company">Company</label>
+              <input class="form-control" id="company" name="company" type="text" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="current-role">Current Role</label>
+              <input class="form-control" id="current-role" name="current_role" type="text" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="first-name">First Name</label>
+              <input class="form-control" id="first-name" name="first_name" type="text" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="last-name">Last Name</label>
+              <input class="form-control" id="last-name" name="last_name" type="text" required />
             </div>
             <div class="col-md-6">
               <label class="form-label" for="email">Email</label>
               <input class="form-control" id="email" name="email" type="email" required />
-            </div>
-            <div class="col-md-6">
-              <label class="form-label" for="organization">Organization</label>
-              <input class="form-control" id="organization" name="organization" type="text" />
             </div>
             <div class="col-md-6">
               <label class="form-label" for="service">Service of Interest</label>
@@ -87,10 +95,19 @@
             </div>
             <div class="col-12">
               <label class="form-label" for="timeline">Desired Timeline</label>
-              <input class="form-control" id="timeline" name="timeline" type="text" placeholder="For example: Immediate, within 30 days, or exploratory" />
+              <div class="form-text mb-2">When should this be completed?</div>
+              <select class="form-select" id="timeline" name="timeline" required>
+                <option value="" selected disabled>Select a timeline</option>
+                <option>Immediate</option>
+                <option>Within 30 days</option>
+                <option>Within 3 months</option>
+                <option>Within 6 months</option>
+                <option>Exploratory</option>
+              </select>
             </div>
             <div class="col-12">
               <label class="form-label" for="details">How can we help?</label>
+              <div class="form-text mb-2">Please provide a brief description of your needs.</div>
               <textarea class="form-control" id="details" name="details" rows="6" required></textarea>
             </div>
             <div class="col-12 text-center">
@@ -173,16 +190,15 @@
       }
 
       .navbar-custom {
-        --bs-navbar-color: rgb(180, 140, 140);
+        --bs-navbar-color: #FFFFFF;
         --bs-navbar-hover-color: white;
-        --bs-navbar-active-color: rgb(180, 140, 140);
-        /* --bs-navbar-active-color: rgb(192, 123, 157); */
+        --bs-navbar-active-color: #FFFFFF;
       }
       .footer-custom {
-        color: rgb(180, 140, 140);
+        color: #FFFFFF;
         padding: 0.5rem 0;
         text-align: center;
-        background-color: #1f1f1f !important;
+        background-color: #3D4C5A !important;
       }
 
       .footer-brand img {
@@ -197,7 +213,7 @@
       }
 
       .footer-link {
-        color: rgb(180, 140, 140);
+        color: #FFFFFF;
         text-decoration: none;
         transition: color 0.2s ease;
       }
@@ -242,17 +258,20 @@
       }
 
       html,
-      body {
-        background-color: rgb(180, 140, 140) !important;
+      body,
+      body.bg-light {
+        background-color: #EFF2F3 !important;
         background-image: none;
+        color: #606E7B;
       }
 
       main {
-        background-color: transparent !important;
+        background-color: #EFF2F3 !important;
+        padding-top: 3rem !important;
       }
 
       .navbar {
-        background-color: #1f1f1f !important;
+        background-color: #3D4C5A !important;
       }
 
       .contact-page {
@@ -260,15 +279,11 @@
       }
 
       .contact-hero {
-        background: radial-gradient(
-          ellipse at center,
-          #000 0%,
-          #1f1f1f 58%,
-          rgba(136, 95, 95, 0.9) 100%
-        );
+        background: rgba(180, 140, 140, 0.4);
+        color: #3D4C5A;
         border: 0;
-        border-top: 1px solid rgb(180, 140, 140);
-        border-bottom: 1px solid #000;
+        border-top: 1px solid #9B6A6C;
+        border-bottom: 1px solid #9B6A6C;
         color: white;
         height: 260px;
         padding: 3.5rem 2rem;
@@ -279,6 +294,15 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+      }
+
+      @media (max-width: 576px) {
+        .contact-hero {
+          box-sizing: border-box;
+          height: auto;
+          min-height: 260px;
+          padding: 2.5rem 1.25rem;
+        }
       }
 
       .contact-hero > * {
@@ -295,26 +319,40 @@
       }
 
       .eyebrow {
-        color: rgb(220, 180, 180);
+        color: #9B6A6C;
         display: inline-block;
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         font-weight: 700;
         letter-spacing: 0.12em;
         margin-bottom: 0.75rem;
         text-transform: uppercase;
       }
 
+      .contact-hero .eyebrow {
+        text-shadow: 0 1px 0 rgba(61, 76, 90, 0.35);
+      }
+
+      .contact-hero h1 {
+        color: #3D4C5A;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+      }
+
+      .contact-hero p {
+        color: #3D4C5A;
+        font-weight: 500;
+      }
+
       .quote-form-panel {
         background: rgba(255, 255, 255, 0.94);
-        border-left: 5px solid rgb(180, 140, 140);
+        border-left: 5px solid #B48C8C;
         border-radius: 1rem;
-        box-shadow: 0 0.75rem 1.5rem rgba(31, 31, 31, 0.12);
+        box-shadow: 0 0.75rem 1.5rem rgba(96, 110, 123, 0.12);
         max-width: 850px;
         padding: 2rem;
       }
 
       .form-label {
-        color: #2b2b2b;
+        color: #606E7B;
         font-weight: 600;
       }
 
@@ -326,19 +364,19 @@
 
       .form-control:focus,
       .form-select:focus {
-        border-color: rgb(180, 140, 140);
+        border-color: #B48C8C;
         box-shadow: 0 0 0 0.25rem rgba(180, 140, 140, 0.2);
       }
 
       .quote-submit {
-        background-color: rgb(136, 95, 95);
-        border-color: rgb(136, 95, 95);
+        background-color: #606E7B;
+        border-color: #606E7B;
         color: white;
       }
 
       .quote-submit:hover {
-        background-color: #1f1f1f;
-        border-color: #1f1f1f;
+        background-color: #606E7B;
+        border-color: #606E7B;
         color: white;
       }
 
@@ -369,7 +407,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+        background-color: rgba(96, 110, 123, 0.4); /* Adjust opacity as needed */
         z-index: 2;
       }
 
