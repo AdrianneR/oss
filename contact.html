@@ -17,9 +17,9 @@
   <body class="bg-light text-dark d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-md navbar-light bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/oss/index.html">
+        <a class="navbar-brand" href="/index.html">
           <img
-            src="/oss/images/oss-logo.png"
+            src="/images/oss-logo.png"
             alt="Logo"
             width="300"
             height="70"
@@ -29,17 +29,17 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="nav navbar-nav ms-auto mt-lg-5 navbar-custom">
             <li class="nav-item">
-              <a class="nav-link" href="/oss/services.html" aria-current="page"
+              <a class="nav-link" href="/services.html" aria-current="page"
                 >Services<span class="visually-hidden">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/oss/team.html"
+              <a class="nav-link"               href="/team.html"
                 >About Us</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/oss/contact.html" aria-current="page"
+              <a class="nav-link active" href="/contact.html" aria-current="page"
                 >Contact Us<span class="visually-hidden">(current)</span></a
               >
             </li>
@@ -166,16 +166,16 @@
       <div class="container py-3">
         <div class="row align-items-center g-2">
           <div class="col-md-4 text-center">
-            <a href="/oss/index.html" class="d-inline-flex align-items-center text-decoration-none footer-brand">
-              <img src="/oss/images/oss-logo.png" alt="Onyx Strategic Solutions logo" width="150" height="38" class="me-2" />
+            <a href="/index.html" class="d-inline-flex align-items-center text-decoration-none footer-brand">
+              <img src="/images/oss-logo.png" alt="Onyx Strategic Solutions logo" width="150" height="38" class="me-2" />
             </a>
           </div>
           <div class="col-md-4 text-center">
             <div class="d-flex justify-content-center gap-3 flex-wrap footer-nav">
-              <a href="/oss/index.html" class="footer-link">Home</a>
-              <a href="/oss/services.html" class="footer-link">Services</a>
-              <a href="/oss/team.html" class="footer-link">Our Team</a>
-              <a href="/oss/contact.html" class="footer-link">Contact</a>
+              <a href="/index.html" class="footer-link">Home</a>
+              <a href="/services.html" class="footer-link">Services</a>
+              <a href="/team.html" class="footer-link">Our Team</a>
+              <a href="/contact.html" class="footer-link">Contact</a>
             </div>
           </div>
           <div class="col-md-4 text-center">
@@ -424,6 +424,34 @@
         ); /* Adjust opacity as needed */
         .carousel-item {
           min-height: 280px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .contact-page {
+          max-width: 1320px;
+        }
+
+        .contact-hero {
+          height: 320px;
+          padding: 4.5rem 3rem;
+        }
+
+        .contact-hero h1 {
+          font-size: clamp(3rem, 4vw, 3.75rem);
+        }
+
+        .contact-hero p {
+          font-size: 1.25rem;
+        }
+
+        .quote-form-panel {
+          max-width: 1040px;
+          padding: 3rem;
+        }
+
+        .form-label {
+          font-size: 1.05rem;
         }
       }
     </style>
