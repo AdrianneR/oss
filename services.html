@@ -17,7 +17,7 @@
   <body class="text-dark d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-md navbar-light bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/oss/index.html">
+        <a class="navbar-brand" href="/index.html">
           <img
             src="/oss/images/oss-logo.png"
             alt="Logo"
@@ -29,17 +29,17 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="nav navbar-nav ms-auto mt-2 mt-lg-5 navbar-custom">
             <li class="nav-item">
-              <a class="nav-link" href="/oss/services.html" aria-current="page"
+              <a class="nav-link" href="/services.html" aria-current="page"
                 >Services<span class="visually-hidden">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/oss/team.html" aria-current="page"
+              <a class="nav-link active" href="/team.html" aria-current="page"
                 >About Us <span class="visually-hidden">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/oss/contact.html">Contact Us</a>
+              <a class="nav-link" href="/contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -160,16 +160,16 @@
       <div class="container py-3">
         <div class="row align-items-center g-2">
           <div class="col-md-4 text-center">
-            <a href="/oss/index.html" class="d-inline-flex align-items-center text-decoration-none footer-brand">
+            <a href="/index.html" class="d-inline-flex align-items-center text-decoration-none footer-brand">
               <img src="/oss/images/oss-logo.png" alt="Onyx Strategic Solutions logo" width="150" height="38" class="me-2" />
             </a>
           </div>
           <div class="col-md-4 text-center">
             <div class="d-flex justify-content-center gap-3 flex-wrap footer-nav">
-              <a href="/oss/index.html" class="footer-link">Home</a>
-              <a href="/oss/services.html" class="footer-link">Services</a>
-              <a href="/oss/team.html" class="footer-link">Our Team</a>
-              <a href="/oss/contact.html" class="footer-link">Contact</a>
+              <a href="/index.html" class="footer-link">Home</a>
+              <a href="/services.html" class="footer-link">Services</a>
+              <a href="/team.html" class="footer-link">Our Team</a>
+              <a href="/contact.html" class="footer-link">Contact</a>
             </div>
           </div>
           <div class="col-md-4 text-center">
@@ -520,6 +520,59 @@
 
       .footer-link:hover {
         color: white;
+      }
+
+      @media (min-width: 1200px) {
+        main.container {
+          max-width: 1440px;
+        }
+
+        .services-hero {
+          height: 320px;
+          padding: 4.5rem 3rem;
+        }
+
+        .services-hero__content {
+          max-width: 1000px;
+        }
+
+        .services-hero h1 {
+          font-size: clamp(3rem, 4vw, 3.75rem);
+        }
+
+        .services-hero .lead {
+          font-size: 1.25rem;
+        }
+
+        .services-carousel {
+          padding-left: 4rem;
+          padding-right: 4rem;
+        }
+
+        .card.service-card {
+          max-width: 1000px;
+          min-height: 500px;
+        }
+
+        .service-card .card-body {
+          min-height: 500px;
+          padding: 3rem !important;
+        }
+
+        .service-statements {
+          font-size: 1.15rem;
+          line-height: 1.85;
+        }
+
+        .service-statements li {
+          padding: 1rem 0;
+        }
+      }
+
+      @media (min-width: 1600px) {
+        main.container {
+          max-width: 1520px;
+        }
       }
 
       .video-container {

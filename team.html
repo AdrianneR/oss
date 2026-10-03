@@ -20,7 +20,7 @@
   <body class="bg-light text-dark d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-md navbar-light bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/oss/index.html">
+        <a class="navbar-brand" href="/index.html">
           <img
             src="/oss/images/oss-logo.png"
             alt="Logo"
@@ -32,20 +32,20 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="nav navbar-nav ms-auto mt-lg-5 navbar-custom">
             <li class="nav-item">
-              <a class="nav-link" href="/oss/services.html" aria-current="page"
+              <a class="nav-link" href="/services.html" aria-current="page"
                 >Services<span class="visually-hidden">(current)</span></a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link active"
-                href="/oss/team.html"
+                href="/team.html"
                 aria-current="page"
                 >About Us <span class="visually-hidden">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/oss/contact.html">Contact Us</a>
+              <a class="nav-link" href="/contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -198,7 +198,7 @@ We believe progress isn’t accidental; it’s engineered through thoughtful pro
         <div class="row align-items-center g-2">
           <div class="col-md-4 text-center">
             <a
-              href="/oss/index.html"
+              href="/index.html"
               class="d-inline-flex align-items-center text-decoration-none footer-brand"
             >
               <img
@@ -214,10 +214,10 @@ We believe progress isn’t accidental; it’s engineered through thoughtful pro
             <div
               class="d-flex justify-content-center gap-3 flex-wrap footer-nav"
             >
-              <a href="/oss/index.html" class="footer-link">Home</a>
-              <a href="/oss/services.html" class="footer-link">Services</a>
-              <a href="/oss/team.html" class="footer-link">About Us</a>
-              <a href="/oss/contact.html" class="footer-link">Contact</a>
+              <a href="/index.html" class="footer-link">Home</a>
+              <a href="/services.html" class="footer-link">Services</a>
+              <a href="/team.html" class="footer-link">About Us</a>
+              <a href="/contact.html" class="footer-link">Contact</a>
             </div>
           </div>
           <div class="col-md-4 text-center">
@@ -534,6 +534,53 @@ We believe progress isn’t accidental; it’s engineered through thoughtful pro
         ); /* Adjust opacity as needed */
         .carousel-item {
           min-height: 280px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .team-page {
+          max-width: 1320px;
+        }
+
+        .team-hero {
+          height: 320px;
+          padding: 4.5rem 3rem;
+        }
+
+        .team-hero h1 {
+          font-size: clamp(3rem, 4vw, 3.75rem);
+        }
+
+        .team-hero p {
+          font-size: 1.25rem;
+        }
+
+        .mission-panel {
+          padding: 3rem;
+        }
+
+        .mission-statement {
+          font-size: 1.2rem;
+          line-height: 1.9;
+        }
+
+        .team-card {
+          padding: 2.75rem;
+        }
+
+        .team-card > p:not(.team-role) {
+          font-size: 1.05rem;
+          line-height: 1.8;
+        }
+
+        .team-role {
+          font-size: 1rem;
+        }
+      }
+
+      @media (min-width: 1600px) {
+        .team-page {
+          max-width: 1440px;
         }
       }
     </style>
